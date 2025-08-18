@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "deviceId": 1,
+      "riskLevel": "HIGH",
+      "predictedAt": "2025-08-18T09:10:00Z"
+    },
+    {
+      "id": 2,
+      "deviceId": 2,
+      "riskLevel": "LOW",
+      "predictedAt": "2025-08-18T09:15:00Z"
+    }
+  ]
+  

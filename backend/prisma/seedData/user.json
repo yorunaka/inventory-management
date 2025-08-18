@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Admin Lab",
+      "email": "admin@lab.com",
+      "role": "ADMIN"
+    },
+    {
+      "id": 2,
+      "name": "Teknisi 1",
+      "email": "teknisi1@lab.com",
+      "role": "TECHNICIAN"
+    },
+    {
+      "id": 3,
+      "name": "Mahasiswa A",
+      "email": "mahasiswaa@lab.com",
+      "role": "USER"
+    }
+  ]

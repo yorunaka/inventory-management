@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "deviceId": 1,
+      "cpuUsage": 65,
+      "ramUsage": 70,
+      "diskUsage": 80,
+      "timestamp": "2025-08-18T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "deviceId": 1,
+      "cpuUsage": 85,
+      "ramUsage": 90,
+      "diskUsage": 75,
+      "timestamp": "2025-08-18T09:00:00Z"
+    },
+    {
+      "id": 3,
+      "deviceId": 2,
+      "cpuUsage": 40,
+      "ramUsage": 50,
+      "diskUsage": 30,
+      "timestamp": "2025-08-18T09:00:00Z"
+    }
+  ]
+  

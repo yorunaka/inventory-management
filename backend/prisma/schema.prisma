@@ -13,3 +13,59 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id       Int     @id @default(autoincrement())
+  name     String
+  email    String  @unique
+  role     Role
+}
+
+model Device {
+  id         Int           @id @default(autoincrement())
+  name       String
+  cpu        String
+  ram        Int
+  disk       Int
+  status     DeviceStatus
+  activities ActivityLog[]
+  predictions Prediction[]
+}
+
+model ActivityLog {
+  id        Int      @id @default(autoincrement())
+  deviceId  Int
+  cpuUsage  Int
+  ramUsage  Int
+  diskUsage Int
+  timestamp DateTime
+
+  device    Device   @relation(fields: [deviceId], references: [id])
+}
+
+model Prediction {
+  id          Int      @id @default(autoincrement())
+  deviceId    Int
+  riskLevel   RiskLevel
+  predictedAt DateTime
+
+  device      Device   @relation(fields: [deviceId], references: [id])
+}
+
+enum Role {
+  ADMIN
+  TECHNICIAN
+  USER
+}
+
+enum DeviceStatus {
+  ACTIVE
+  MAINTENANCE
+  BROKEN
+}
+
+enum RiskLevel {
+  LOW
+  MEDIUM
+  HIGH
+}

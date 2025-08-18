@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "PC-01",
+      "cpu": "Intel Core i5",
+      "ram": 8,
+      "disk": 512,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 2,
+      "name": "PC-02",
+      "cpu": "Intel Core i7",
+      "ram": 16,
+      "disk": 1024,
+      "status": "ACTIVE"
+    },
+    {
+      "id": 3,
+      "name": "PC-03",
+      "cpu": "AMD Ryzen 5",
+      "ram": 16,
+      "disk": 512,
+      "status": "MAINTENANCE"
+    }
+  ]
+  
